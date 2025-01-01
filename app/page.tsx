@@ -2,9 +2,9 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 import { getProducts } from '../services/productService';
-import UserInfo from '@/shared/UserInfo';
 import ProductCard from '@/shared/ProductCard';
 import { Stack } from '@mui/material';
+import UserHeader from '@/shared/UserHeader';
 const Home = () => {
   const [products, setProducts] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
@@ -13,7 +13,6 @@ const Home = () => {
     const fetchProducts = async () => {
       try {
         const data = await getProducts();
-        console.log({data})
         setProducts(data);
       } catch (error) {
         if ((error as any).response?.status === 401) {
@@ -36,7 +35,7 @@ const Home = () => {
 
   return (
     <div>
-      <UserInfo />
+      <UserHeader />
       <h1>Product List</h1>
 
       <Stack
@@ -50,11 +49,6 @@ const Home = () => {
           }}
         >
         {products.map((product) => (
-          // <div key={product.id} className="product-card">
-          //   <h2>{product.name}</h2>
-          //   <p>{product.description}</p>
-          //   <p>${product.price}</p>
-          // </div>
       <ProductCard key={product.id} product={product}/>
         ))}
           </Stack>

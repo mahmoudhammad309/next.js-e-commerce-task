@@ -8,6 +8,7 @@ const ProductCard = ({ product }: any) => {
   const theme = useTheme();
 
   return (
+    <Link href={`/product/${product.id}`}>
     <Stack
       sx={{
         height: "100%",
@@ -56,7 +57,6 @@ const ProductCard = ({ product }: any) => {
           </Typography>
         </>
       </Stack>
-      <Link href={`/product/${product.id}`}>
         <Stack
           sx={{
             flexDirection: "row",
@@ -77,8 +77,8 @@ const ProductCard = ({ product }: any) => {
             {product.description}
           </Typography>
         </Stack>
-      </Link>
     </Stack>
+      </Link>
   );
 };
 
