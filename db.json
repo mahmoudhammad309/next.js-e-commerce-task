@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "id": "8edf",
+      "name": "user 1",
+      "email": "test1@student.com",
+      "password": "$2a$10$FVPKEcupMa6NmNB4BmneDuKAsIm7Yk.akCQ.NdizKZiUqpCeVrlGm",
+      "role": "user",
+      "status": "active"
+    },
+    {
+      "id": "7c94",
+      "name": "user 2",
+      "email": "test2@student.com",
+      "password": "$2a$10$GiX3tr9z3Tfj7ZtnzwGWI.LmIq0ti9eARQVxy1SPXpyUZBKUnpfF6",
+      "role": "user",
+      "status": "active"
+    },
+    {
+      "id": "51f1",
+      "name": "user 3",
+      "email": "test3@student.com",
+      "password": "$2a$10$rsHcH8VCZyri/b6BWVRuDOlY4Bt3TgGmLqi3oAHXu6Dg5iE4Y7fRe",
+      "role": "user",
+      "status": "active"
+    },
+    {
+      "id": "b9df",
+      "name": "admin admin",
+      "email": "admin@admin.com",
+      "password": "$2a$10$ClLCLUDHdlXjHA3WWso7E.pV99qTl2Cw3qfe1PKTa86tAXqyvBhiG",
+      "role": "admin",
+      "status": "active"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Product 1",
+      "description": "Description of Product 1",
+      "price": 19.99,
+      "imageUrl": "/assets/images/product1.png"
+    },
+    {
+      "id": "2",
+      "name": "Product 2",
+      "description": "Description of Product 2",
+      "price": 29.99,
+      "imageUrl": "/assets/images/product2.png"
+    },
+    {
+      "id": "3",
+      "name": "Product 3",
+      "description": "Description of Product 3",
+      "price": 29.99,
+      "imageUrl": "/assets/images/product3.png"
+    },
+    {
+      "id": "4",
+      "name": "Product 4",
+      "description": "Description of Product 4",
+      "price": 29.99,
+      "imageUrl": "/assets/images/product4.png"
+    }
+  ],
+  "orders": []
+}
